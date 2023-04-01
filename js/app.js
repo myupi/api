@@ -12,7 +12,7 @@ let submit = document.querySelector(".submit");
 let KEY = "58ed228a";
 
 async function getApi(search, key) {
-  let data = await fetch(`http://www.omdbapi.com/?apikey=${key}&s=${search}`)
+  let data = await fetch(`https://www.omdbapi.com/?apikey=${key}&s=${search}`)
     .then((res) => res.json())
     .then((data) => data.Search)
     .catch((error) => console.log(error));
